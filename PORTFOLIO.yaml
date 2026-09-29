@@ -1,0 +1,21 @@
+schema_version: 1
+repository: aviation-operations-optimization
+role: umbrella
+axis: application
+area: aviation
+status: active
+owner: jorsacademy
+projects:
+  - aircraft-allocation-under-uncertain-demand
+  - aircraft-maintenance-scheduling-gurobi
+  - airline-crew-scheduling-column-generation
+  - airline-crew-workforce-optimization-ga
+  - airline-operations-under-uncertainty-stochastic-optimization
+  - airport-checkin-counter-optimization-erlang-c
+  - airport-checkin-simulation-optimization
+  - aviation-crew-scheduling-milp
+  - metroglobal-airport-counter-optimization
+conventions:
+  provenance_records: true
+  reproducibility_expected: true
+  benchmark_assumptions_documented: true
