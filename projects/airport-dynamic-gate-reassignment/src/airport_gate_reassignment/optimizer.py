@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from math import inf
-from typing import Mapping
+from collections.abc import Mapping
 
 import numpy as np
 from scipy.optimize import Bounds, LinearConstraint, milp
@@ -39,9 +39,7 @@ def _intervals_overlap(start_a: int, end_a: int, start_b: int, end_b: int) -> bo
 def _gate_compatible(flight: Flight, gate: Gate) -> bool:
     if _aircraft_rank(flight.aircraft_class) > _aircraft_rank(gate.max_aircraft_class):
         return False
-    if flight.international and not gate.international_capable:
-        return False
-    return True
+    return not (flight.international and not gate.international_capable)
 
 
 def _closed_for_flight(problem: GateAssignmentProblem, flight: Flight, gate: Gate) -> bool:
