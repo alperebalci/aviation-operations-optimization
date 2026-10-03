@@ -1,8 +1,8 @@
 from __future__ import annotations
 
+from collections.abc import Mapping
 from dataclasses import dataclass
 from math import inf
-from collections.abc import Mapping
 
 import numpy as np
 from scipy.optimize import Bounds, LinearConstraint, milp
