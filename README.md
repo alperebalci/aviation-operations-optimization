@@ -7,7 +7,7 @@ This repository is the primary umbrella repository for this Jors Academy researc
 
 ### Native flagship
 
-The repository root contains the actively maintained **airline disruption-recovery optimization model** described below. The entries under `projects/` are consolidated companion projects.
+The repository root contains the actively maintained **airline disruption-recovery optimization model** described below. Most entries under `projects/` are consolidated companion projects; new research modules may also be developed directly in this umbrella repository.
 
 ### Included projects
 
@@ -18,10 +18,11 @@ The repository root contains the actively maintained **airline disruption-recove
 - [`airline-operations-under-uncertainty-stochastic-optimization`](projects/airline-operations-under-uncertainty-stochastic-optimization/)
 - [`airport-checkin-counter-optimization-erlang-c`](projects/airport-checkin-counter-optimization-erlang-c/)
 - [`airport-checkin-simulation-optimization`](projects/airport-checkin-simulation-optimization/)
+- [`airport-dynamic-gate-reassignment`](projects/airport-dynamic-gate-reassignment/)
 - [`aviation-crew-scheduling-milp`](projects/aviation-crew-scheduling-milp/)
 - [`metroglobal-airport-counter-optimization`](projects/metroglobal-airport-counter-optimization/)
 
-Each consolidated project keeps its own files and a `SOURCE_REPOSITORY.md` provenance record. The snapshot preserves the source repository's default-branch files at consolidation time; repository-level history and metadata remain separate from the snapshot.
+Consolidated projects keep their own files and a `SOURCE_REPOSITORY.md` provenance record. Their snapshots preserve the source repository's default-branch files at consolidation time; repository-level history and metadata remain separate from the snapshot.
 <!-- portfolio-umbrella:end -->
 
 A mixed-integer optimization model for airline disruption recovery using aircraft-flow networks and airport-capacity degradation scenarios.
