@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   test:
+    name: Dynamic gate reassignment / Python ${{ matrix.python-version }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
