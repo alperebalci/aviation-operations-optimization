@@ -3,13 +3,8 @@ name: Dynamic gate reassignment
 on:
   push:
     branches: [main]
-    paths:
-      - "projects/airport-dynamic-gate-reassignment/**"
-      - ".github/workflows/gate-reassignment.yml"
   pull_request:
-    paths:
-      - "projects/airport-dynamic-gate-reassignment/**"
-      - ".github/workflows/gate-reassignment.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read
